@@ -1,0 +1,70 @@
+a{
+	color: #7e8c8d;
+	-webkit-backface-visibility: hidden;
+	text-decoration: none;
+}
+
+li{
+  list-style: none; 
+}
+
+body{
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[type=button], input[type=submit], input[type=file], button {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/*index*/
+.index{
+	text-align: center;
+	background:
+		repeating-linear-gradient(
+			45deg,
+			transparent,
+			transparent 1em,
+			moccasin 0,
+			moccasin 2em,
+			transparent 0,
+			transparent 3em,
+			powderblue 0,
+			powderblue 4em,
+			transparent 0,
+			transparent 5em,
+			lavender 0,
+			lavender 6em,
+			transparent 0,
+			transparent 7em,
+			beige 0,
+			beige 8em
+		),
+		repeating-linear-gradient(
+			-45deg,
+			transparent,
+			transparent 1em,
+			khaki 0,
+			khaki 2em,
+			transparent 0,
+			transparent 3em,
+			beige 0,
+			beige 4em,
+			transparent 0,
+			transparent 5em,
+			peachpuff 0,
+			peachpuff 6em
+		), whitesmoke;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+.index nav{
+	font-family: 'Audiowide';
+	font-size: 2.8em;
+	font-weight: 600;
+}
+.index nav li{
+	background: 
+}
