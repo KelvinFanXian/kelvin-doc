@@ -8,8 +8,14 @@
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body class="index">
-	<h1>Welcome to 23dp!</h1>
+<body>
+	<div id="content"></div>
+	<script src="marked.min.js"></script>
+	<script>
+	document.getElementById('content').innerHTML =
+	  marked('');
+	</script>
+
 </body>
 <script>
     (function(){
