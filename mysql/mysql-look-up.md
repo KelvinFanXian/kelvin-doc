@@ -1,3 +1,5 @@
+## mysql学习笔记
+
 ```mysql
 /* 启动MySQL */
 net start mysql
