@@ -2,4 +2,5 @@
 to learn something frequently
 
 - mysql
+- stock
 
