@@ -1,10 +1,6 @@
 # Join
 
----
-
-***NLJ & BNJ***
-
----
+# NLJ & BNJ
 
 - 如果有两个大小不同的表做**join**，应该用小表做**驱动表**
 
@@ -76,11 +72,7 @@ for row in t1:
 
 
 
----
-
-***Join 优化:  MRR & BKA***
-
----
+# Join 优化:  MRR & BKA
 
 ```mysql
 create table t1(id int primary key, a int, b int, index(a));
