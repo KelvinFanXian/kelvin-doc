@@ -3,4 +3,5 @@ to learn something frequently
 
 - mysql
 - stock
-
+- jvm
+- rk
