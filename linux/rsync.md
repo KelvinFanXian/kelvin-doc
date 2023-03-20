@@ -10,7 +10,7 @@ rsync -avz --delete ./dist/ root@124.222.8.90:/tmp/test
 # 生成公钥、私钥
 ssh-keygen -t rsa
 # 将公钥传输到远程主机
-ssh-copy-id -i id_rsa.pub root@124.222.8.90
+ssh-copy-id -i id_rsa.pub root@
 ```
 
 

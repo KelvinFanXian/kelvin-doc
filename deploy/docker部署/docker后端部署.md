@@ -109,38 +109,9 @@ echo "finish deploy,$container_name:$container_version,port:$container_port"
 docker build -f dockerfile -t admin-ui:1.0 .dang
 ```
 
-```js
-const webpack = require('webpack')
-const path = require('path')
-const utils = require('./utils')
-const config = require('../config')
-const vueLoaderConfig = require('./vue-loader.conf')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+# Remove none
 
-function resolve (dir) {
-  return path.join(__dirname, '..', dir)
-}
-
-module.exports = {
-  entry: {
-    app: './src/main.js'
-  },
-  output: {
-    path: config.build.assetsRoot,
-    filename: '[name].js',
-    publicPath: process.env.NODE_ENV === 'production'
-      ? config.build.assetsPublicPath
-      : config.dev.assetsPublicPath
-  },
-  resolve: {
-    extensions: ['.js', '.vue', '.json'],
-    alias: {
-      '@': resolve('src'),
-      'api': resolve('src/api'),
-      'common': resolve('src/common'),
-      'components': resolve('src/components'),
-      'assets': resolve('src/assets')
-    }
-  },
+```bash
+docker rmi $(docker images -f "dangling=true" -q)
 ```
 
